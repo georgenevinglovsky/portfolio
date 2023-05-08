@@ -15,7 +15,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(50);
-
+camera.position.setX(20);
 
 renderer.render(scene, camera);
 
@@ -55,7 +55,7 @@ const george = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
   new THREE.MeshBasicMaterial({map: georgeTexture})
 );
-george.position.set(10,0,-10);
+george.position.set(-3,0,55);
 scene.add(george);
 
 const sphereTexture = new THREE.TextureLoader().load('moon.jpg');
@@ -63,7 +63,7 @@ const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({map:sphereTexture})
 );
-sphere.position.set(5,0,15);
+sphere.position.set(-5,0,40);
 scene.add(sphere);
 
 
