@@ -58,6 +58,7 @@ const george = new THREE.Mesh(
 george.position.set(-3,0,55);
 scene.add(george);
 
+
 const sphereTexture = new THREE.TextureLoader().load('moon.jpg');
 const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
